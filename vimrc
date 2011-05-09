@@ -73,6 +73,7 @@ map <F3> :bn<CR>
 imap <F3> <ESC>:bn<CR>
 
 map <F5> :w<CR>:!python %<CR>
+imap <F5> <ESC>:w<CR>:!python %<CR>
 
 "saving files with root access rights
 cmap w!! w !sudo tee % >/dev/null
