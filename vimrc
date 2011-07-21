@@ -52,8 +52,8 @@ set nolist                                      "don't show noprinting character
 
 if has("gui_running")
     set t_Co=256
-    set lines=57 columns=100
-    "colorscheme liquidcarbon
+    set guifont=Menlo:h12
+    set lines=53 columns=100
     set background=dark
     colorscheme liquidcarbon
     " Red cursor - russian keyboard layout
@@ -62,6 +62,8 @@ if has("gui_running")
     set go-=f
     set go-=m
     set go-=T
+else
+    colorscheme desert
 endif
 
 " previous buffer
